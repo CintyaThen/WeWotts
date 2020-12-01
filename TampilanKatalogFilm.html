@@ -1,0 +1,203 @@
+<html>
+    <head>
+        <title>TAMPILAN KATALOG FILM</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <style>
+        fieldset{
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 20px auto;
+            width: 500px;
+        }
+        h3.logo {
+            padding: 20px;
+            font-family: serif;
+            color: #312c28
+        }
+        img.logo{
+            height: 50px; width: 50px;
+            border: 2px;
+        }
+        /* Style the search field */
+        form.example input[type=text] {
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            float: left;
+            width: 50%;
+            background: #f1f1f1;
+            position: relative;
+            top: -80px;
+            left: 25%;
+        }
+
+        /* Style the submit button */
+        form.example button {
+            float: left;
+            width: 5%;
+            padding: 12px;
+            background: #757472; //warna icon search #f2c777;
+            color: white;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-left: none; /* Prevent double borders */
+            cursor: pointer;
+            position: relative;
+            top: -80px;
+            left: 25%;
+        }
+        hr.header{
+            top: -75px;
+            position: relative;
+
+        }
+        form.example button:hover {
+            background: #312C28;//#ec8c65;
+        }
+
+        /* Clear floats */
+        form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        body{
+            background: #EFEFEF; font-family: Arial, tahoma;
+        }
+
+        img{
+            height: 150px; width: 150px;
+            border: 2px;
+        }
+        #search {
+            font-family: Florence;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 5px;
+            width: 320px;
+            border-color: grey;
+            background-color: #DCDCDC;
+            text-align: left;
+            font-size: 16px;
+        }
+        #cari{
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 5px;
+            width: 320px;
+        }
+        legend{
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        ul {
+            list-style-type: none;
+            top: -70px;
+            position: relative;
+            margin: 10px;
+            padding: 0px;
+            background-color: #f1f1f1;
+
+        }
+        .vertical{
+            border-left: 2px solid black;
+            height: 1000px;
+            position: relative;
+            left: 15%;
+            top: -342px;
+        }
+        
+        li {
+            display: table-header-group;
+        }
+
+        li a{
+            display: block;
+            padding: 10px;
+            color: #312C28;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #E7AB3D;
+            padding: 10px;
+            
+        }
+        label{margin-bottom: 10px; display: block;}
+        input{margin-bottom: 10px;}
+
+    </style>
+    <body>
+        <img class="logo" src="logo.png" align="left">
+        <h3 class="logo"> WE WOTTS </h3>
+
+        <!-- Menu -->
+        <!-- <nav>
+             <ul id="nav">
+                 <li class="clicked"><a href="#"style="color:#000000">Beranda</a>
+                 <li><a href="#">Trending</a>
+                 <li><a href="#">Mengikuti</a>
+                 <li><a href="#">Video Saya</a>
+                 <li><a href="#">Library</a>
+                 <li><a href="#">Riwayat</a>
+                 <li><a href="#">Akun</a>
+             </ul>
+         </nav>
+        -->
+        <!-- Search bar -->
+        <br>
+        <div id="header" class="section">
+            <!-- Load icon library -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <!-- The form -->
+            <form class="example" action="action_page.php">
+                <input type="text" placeholder="Telusuri.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+        <hr class="header">
+        <!-- Menu -->
+        <nav>
+            <ul id="nav">
+                <li class="clicked"><a href="#"style="color:#000000">Beranda</a>
+                <li><a href="#">Trending</a>
+                <li><a href="#">Mengikuti</a>
+                <li><br>
+                <li><a href="#">Video Saya</a>
+                <li><a href="#">Perpustakaan Saya</a>
+                <li><a href="#">Riwayat</a>
+            </ul>
+        </nav>
+        <div class="vertical"></div>
+
+    </body>
+</html>
+<!--
+
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #f2c777;
+
+        }
+        li {
+            display: inline-block;
+            position: relative;
+            top: 0;
+            left: 30%;
+        }
+        li a{
+            display: block;
+            padding: 10px;
+            color: #7c785b;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #ec8c65;
+            padding: 10px;
+        }
+-->
